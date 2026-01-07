@@ -228,5 +228,5 @@ https://wiki.archlinux.org/title/Graphics_processing_unit#Installation
 ### `power-profiles-daemon` - профили питания, обычно используются для ноутбуков
 ### Для **bluetooth** нужно установить пакеты  `bluez`,  `bluez-utils` и запустить службу
 ```
-sudo systemctl enable bluetoo
+sudo systemctl enable bluetooth.service
 ```
