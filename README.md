@@ -218,9 +218,9 @@ https://wiki.archlinux.org/title/Graphics_processing_unit#Installation
 #### AMD
 ![[n2.png]]
 #### Intel
-![[Pasted image 20260107234039.png]]
+![[n3.png]]
 #### NVIDIA
-![[Pasted image 20260107234119.png]]
+![[n4.png]]
 ### Рекомендую сразу установить lib32 пакеты нужного вам драйвера
 
 
