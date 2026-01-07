@@ -212,15 +212,15 @@ grub-mkconfig -o /boot/grub/grub.cfg
 https://wiki.archlinux.org/title/Graphics_processing_unit#Installation
 
 ### Общая таблица
-![[n1.png]]
+![](screenshots/n1.png)
 
 ### Более подробные таблицы
 #### AMD
-![[n2.png]]
+![](screenshots/n2.png)
 #### Intel
-![[n3.png]]
+![](screenshots/n3.png)
 #### NVIDIA
-![[n4.png]]
+![](screenshots/n4.png)
 ### Рекомендую сразу установить lib32 пакеты нужного вам драйвера
 
 
