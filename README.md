@@ -156,8 +156,35 @@ passwd # Пароль root
 useradd -m -G wheel имя_пользователя # Создание пользователя, создание домашнего раздела для него и добавление в группу для возможности использовать права суперпользователя
 passwd имя_пользователя # Пароль пользователя
 ```
+### 4) Репозитории
+#### Изначально доступны только `core` и `extra`, нужно добавить `multilib` для 32 битных программ и библиотек, например **Steam**
+```
+nano /etc/pacman.conf
+# Найдите строку [multilib], раскомментируйте ее и строку ниже Include=
+# Должно получиться так:
 
-### 4) Загрузчик (GRUB)
+#[core-testing]  
+#Include = /etc/pacman.d/mirrorlist  
+  
+[core]  
+Include = /etc/pacman.d/mirrorlist  
+  
+#[extra-testing]  
+#Include = /etc/pacman.d/mirrorlist  
+  
+[extra]  
+Include = /etc/pacman.d/mirrorlist  
+  
+# If you want to run 32 bit applications on your x86_64 system,  
+# enable the multilib repositories as required here.  
+  
+#[multilib-testing]  
+#Include = /etc/pacman.d/mirrorlist  
+  
+[multilib]  
+Include = /etc/pacman.d/mirrorlist
+```
+### 5) Загрузчик (GRUB)
 ```
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id="Arch Linux"
 
@@ -171,9 +198,16 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 https://wiki.archlinux.org/title/Graphics_processing_unit#Installation
 
-### AMD
+### Общая таблица
+![[Pasted image 20260107234538.png]]
+
+### Более подробные таблицы
+#### AMD
 ![[Pasted image 20260107233859.png]]
-### Intel
+#### Intel
 ![[Pasted image 20260107234039.png]]
-### NVIDIA
+#### NVIDIA
 ![[Pasted image 20260107234119.png]]
+### Рекомендую сразу установить lib32 пакеты нужного вам драйвера
+
+## 6. Размонтирование разделов
