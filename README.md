@@ -174,3 +174,6 @@ https://wiki.archlinux.org/title/Graphics_processing_unit#Installation
 ### AMD
 ![[Pasted image 20260107233859.png]]
 ### Intel
+![[Pasted image 20260107234039.png]]
+### NVIDIA
+![[Pasted image 20260107234119.png]]
