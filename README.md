@@ -212,7 +212,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 https://wiki.archlinux.org/title/Graphics_processing_unit#Installation
 
 ### Общая таблица
-![[Pasted image 20260107234538.png]]
+![[Pasted image 20260107234445.png]]
 
 ### Более подробные таблицы
 #### AMD
