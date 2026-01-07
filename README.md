@@ -209,6 +209,8 @@ grub-mkconfig -o /boot/grub/grub.cfg
 ### Если у вас встроенная в процессор графика или дискретная карта от amd, то скорей всего нам ничего дополнительно ставить не нужно, но я бы посоветовал на всякий случай установить некоторые пакеты
 ### Пользователям дискретных карт NVIDIA установка драйверов обязательна
 
+### Рекомендую сразу установить lib32 пакеты нужного вам драйвера
+
 https://wiki.archlinux.org/title/Graphics_processing_unit#Installation
 
 ### Общая таблица
@@ -221,7 +223,6 @@ https://wiki.archlinux.org/title/Graphics_processing_unit#Installation
 ![](screenshots/n3.png)
 #### NVIDIA
 ![](screenshots/n4.png)
-### Рекомендую сразу установить lib32 пакеты нужного вам драйвера
 
 
 ## Остальные пакеты
